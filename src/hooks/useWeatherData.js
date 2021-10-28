@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const useWeatherData =  (city) => {
     const [weatherArr, setWeatherArr] = useState([]);
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=Imperial&appid=2a23152aca4c1c4bf50bf677554dedf4`;
+    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${city}&units=Imperial&appid=bff35e06736b740c8bdf19dc5115cbcf`;
     useEffect(() => {
         const weatherData = async () =>{
             const res = await axios.get(url)

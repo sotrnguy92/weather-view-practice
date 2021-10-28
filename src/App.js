@@ -1,5 +1,6 @@
 import './App.css';
 import {useWeatherData} from "./hooks/useWeatherData";
+import {SingleDayComponent} from "./components/SingleDayComponent";
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
 
     <div className="App">
+      <SingleDayComponent/>
     </div>
   );
 }
