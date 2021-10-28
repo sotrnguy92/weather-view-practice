@@ -1,0 +1,12 @@
+.temp-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    color: red;
+}
+
+
+
+.max-temp {
+    color: black;
+}

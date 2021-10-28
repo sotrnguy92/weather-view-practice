@@ -1,0 +1,12 @@
+.single-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+}
+
+.temp-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
