@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-width: thick;
-    border-style: dashed;
     width: 10rem;
 }
 
@@ -11,4 +9,8 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+}
+
+.today{
+    background-color: lightgray;
 }

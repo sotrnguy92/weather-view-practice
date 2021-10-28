@@ -1,15 +1,13 @@
 import './App.css';
 import {useWeatherData} from "./hooks/useWeatherData";
-import {SingleDayComponent} from "./components/SingleDayComponent";
-
+import {FiveDayComponent} from "./components/FiveDayComponent";
 
 function App() {
   const data = useWeatherData("San Jose");
-  console.log("I am in APP", data)
   return (
 
     <div className="App">
-      <SingleDayComponent data={data[0]}/>
+      <FiveDayComponent fiveDayData={data}/>
     </div>
   );
 }

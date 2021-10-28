@@ -10,7 +10,6 @@ export const useWeatherData =  (city) => {
             const res = await axios.get(url)
 
             const data = res.data
-            console.log(data)
 
            const fiveDayWeather = data.list.filter((_,index) => index%8 === 0).map(day => {
                const min = parseInt(day.main.temp_min);
