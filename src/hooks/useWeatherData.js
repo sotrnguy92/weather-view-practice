@@ -13,8 +13,8 @@ export const useWeatherData =  (city) => {
             console.log(data)
 
            const fiveDayWeather = data.list.filter((_,index) => index%8 === 0).map(day => {
-               const min = day.main.temp_min;
-               const max = day.main.temp_max;
+               const min = parseInt(day.main.temp_min);
+               const max = parseInt(day.main.temp_max);
                const iconData = {iconImageId: day.weather[0].icon, iconDescription: day.weather[0].description}
                const dayName = new Date(day.dt_txt).toLocaleDateString(undefined, {weekday: "short"});
                return {min, max, iconData, dayName}

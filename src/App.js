@@ -9,7 +9,7 @@ function App() {
   return (
 
     <div className="App">
-      <SingleDayComponent/>
+      <SingleDayComponent data={data[0]}/>
     </div>
   );
 }
